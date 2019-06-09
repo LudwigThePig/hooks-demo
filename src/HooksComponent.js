@@ -25,12 +25,11 @@ class HooksComponent extends React.Component {
     return (
       <div className="main">
         <button 
-          className="light-btn"
+          type="button"
           onClick={this.handleClick}
         >
-          Hook me!
+          {`${count} clicks`}
         </button>
-        <p>{count} count!</p>
       </div>
     );
   }

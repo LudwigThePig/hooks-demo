@@ -3,34 +3,16 @@ import './App.css';
 
 
 class ClassComponent extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 1,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    e.preventDefault();
-    const { count } = this.state;
-
-    this.setState({
-      count: count + 1,
-    });
-  }
-
+  // TODO, handleClicks
   render() {
-    const { count } = this.state;
+    const count = 0;
     return (
       <div className="main">
         <button 
-          className="light-btn"
-          onClick={this.handleClick}
+          type="button"
         >
-          Click me!
+          {`${count} clicks`}
         </button>
-        <p>{count} count!</p>
       </div>
     );
   }

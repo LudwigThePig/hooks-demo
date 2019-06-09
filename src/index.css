@@ -23,12 +23,9 @@ button {
   cursor: pointer;
   max-width: 120px;
   max-height: 50px;
-}
-
-.light-btn {
   background: #61dafb;
 }
-.light-btn:hover {
+button:hover {
   background: #79b6f2;
 }
 

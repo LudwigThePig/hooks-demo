@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 
 
-class App extends React.Component {
+class ClassComponent extends React.Component {
   constructor() {
     super();
     this.state = {
-      count: 1
-    }
+      count: 1,
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -16,8 +16,8 @@ class App extends React.Component {
     const { count } = this.state;
 
     this.setState({
-      count: count + 1 
-    })
+      count: count + 1,
+    });
   }
 
   render() {
@@ -27,8 +27,8 @@ class App extends React.Component {
         <button onClick={this.handleClick}>Click me!</button>
         <p>{count}</p>
       </div>
-  );
-}
+    );
+  }
 }
 
-export default App;
+export default ClassComponent;

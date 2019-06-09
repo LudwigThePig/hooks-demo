@@ -23,12 +23,14 @@ class ClassComponent extends React.Component {
   render() {
     const { count } = this.state;
     return (
-      <div className="App">
+      <div className="main">
         <button 
-          className="dark-btn"
+          className="light-btn"
           onClick={this.handleClick}
-        >Click me!</button>
-        <p>{count}</p>
+        >
+          Click me!
+        </button>
+        <p>{count} count!</p>
       </div>
     );
   }

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ClassComponent from './ClassComponent';
-import HooksComponent from './Practice';
-import CustomHook from './FetchHook';
+import HooksComponent from './practiceComponents/HooksComponent';
+import CustomHook from './practiceComponents/FetchHook';
 import * as serviceWorker from './serviceWorker';
 
 

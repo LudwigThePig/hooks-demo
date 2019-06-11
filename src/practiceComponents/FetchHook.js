@@ -33,7 +33,7 @@ class RendersJustOneImage extends React.Component {
 };
 
 
-const LazyLoadAnImage = () => {
+const LazyLoader = () => {
   return (
     <div className="custom-hook">
       <Suspense fallback={<span>Loading...</span>}>
@@ -43,7 +43,7 @@ const LazyLoadAnImage = () => {
   );
 };
 
-export default LazyLoadAnImage;
+export default LazyLoader;
 
 
 
@@ -54,5 +54,6 @@ export default LazyLoadAnImage;
  *********************************************************************
  * 1. It is 30 lines long...
  * 2. The componentDidMount is an octopus
- * 3. Error handling sucks
+ * 3. Error handling sucks, bubbling errors is difficult and overly verbose.
+ * ~~ This is kind of a strawman argument ~~
  */

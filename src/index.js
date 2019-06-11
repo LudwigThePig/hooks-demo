@@ -15,13 +15,17 @@ function SuperSecretWrapper() {
   return (
     <div id="main">
       <div className="flex header">
+      
         <h1><span style={spanStyle}>Reacting with</span></h1>
+
         <select onChange={(e) => setComponentType(e.target.value)}>
           <option value="Classes">Classes</option>
           <option value="Hooks">Hooks</option>
           <option value="Custom Hooks">Custom Hooks</option>
         </select>
+      
       </div>
+
       {componentType === 'Classes'
         ? <ClassComponent /> : null }
 
@@ -30,6 +34,7 @@ function SuperSecretWrapper() {
 
       {componentType === 'Custom Hooks'
         ? <CustomHook /> : null }
+
     </div>
   );
 }

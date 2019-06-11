@@ -1,4 +1,5 @@
 import React from 'react';
+
 // #############################
 // #  TODO: Convert to hooks!  #
 //# ############################
@@ -6,7 +7,7 @@ class HooksComponent extends React.Component {
   constructor() {
     super();
     this.state = {
-      count: 1,
+      count: 0,
     };
     this.handleClick = this.handleClick.bind(this);
   }

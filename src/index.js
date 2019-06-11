@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ClassComponent from './ClassComponent';
 import HooksComponent from './Practice';
-import CustomHook from './CustomHook';
+import CustomHook from './FetchHook';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -13,22 +13,23 @@ function SuperSecretWrapper() {
     color: '#ccc'
   }
   return (
-    <div>
-      <div className="header flex">
-        <h1><span style={spanStyle}>Reacting with</span> {componentType}</h1>
-        <button
-          className="light-btn"
-          onClick={() => setComponentType(componentType === 'Classes' ? 'Hooks' : 'Classes')}
-          type="button"
-        >
-      Switch it up
-        </button>
+    <div id="main">
+      <div className="flex header">
+        <h1><span style={spanStyle}>Reacting with</span></h1>
+        <select onChange={(e) => setComponentType(e.target.value)}>
+          <option value="Classes">Classes</option>
+          <option value="Hooks">Hooks</option>
+          <option value="Custom Hooks">Custom Hooks</option>
+        </select>
       </div>
       {componentType === 'Classes'
-        ? <ClassComponent />
-        : <HooksComponent />
-      }
-      <CustomHook />
+        ? <ClassComponent /> : null }
+
+      {componentType === 'Hooks'
+      ? <HooksComponent /> : null }
+
+      {componentType === 'Custom Hooks'
+        ? <CustomHook /> : null }
     </div>
   );
 }

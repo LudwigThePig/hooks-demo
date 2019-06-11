@@ -15,9 +15,11 @@ const DisplayCatAPI = () => {
 
 const LazyLoadACat = () => {
   return (
-    <Suspense fallback={<span>Loading...</span>}>
-      <DisplayCatAPI />
-    </Suspense>
+    <div className="custom-hook">
+      <Suspense fallback={<span>Loading...</span>}>
+        <DisplayCatAPI />
+      </Suspense>
+    </div>
   )
 }
 

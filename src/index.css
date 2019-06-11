@@ -3,11 +3,6 @@
 html {
   font-size: 16px;
 }
-
-h1 {
-  font-size: 2.8rem;
-}
-
 body {
   margin: 0;
   background: #f5f6f8;
@@ -15,26 +10,52 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  font-size: 2.8rem;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+select {
+  height: 40px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-radius: 2px;
+  border: none;
+  height: 70px;
+  background: inherit;
+  color: #fff;
+  padding-left: 1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 button {
   display: inline-block;
-  padding: 12px;
+  padding: 20px;
   border: 0;
   font-weight: bold;
+  font-size: 2rem;
   cursor: pointer;
-  max-width: 120px;
-  max-height: 50px;
+  color: #2e2e2e;
   background: #61dafb;
 }
+
 button:hover {
   background: #79b6f2;
 }
 
-
-.header {
+#main .header {
   padding: 20px 25vw;
   background: #282C34;
   color: #fff;
   width: 50vw;
+  justify-content: center;
 }
 
 .main {
@@ -47,8 +68,14 @@ button:hover {
   align-items: center;
 }
 
-.flex {
+.custom-hook {
+  width: auto;
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 50vw;
+  max-height: 70vh;
 }

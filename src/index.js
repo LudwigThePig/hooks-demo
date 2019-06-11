@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ClassComponent from './ClassComponent';
-import HooksComponent from './HooksComponent';
+import HooksComponent from './Practice';
+import CustomHook from './CustomHook';
 import * as serviceWorker from './serviceWorker';
 
 
 function SuperSecretWrapper() {
-  const [componentType, setComponentType] = useState('Class');
+  const [componentType, setComponentType] = useState('Classes');
   const spanStyle = {
     color: '#ccc'
   }
@@ -17,16 +18,17 @@ function SuperSecretWrapper() {
         <h1><span style={spanStyle}>Reacting with</span> {componentType}</h1>
         <button
           className="light-btn"
-          onClick={() => setComponentType(componentType === 'Class' ? 'Hooks' : 'Class')}
+          onClick={() => setComponentType(componentType === 'Classes' ? 'Hooks' : 'Classes')}
           type="button"
         >
       Switch it up
         </button>
       </div>
-      {componentType === 'Class'
+      {componentType === 'Classes'
         ? <ClassComponent />
         : <HooksComponent />
       }
+      <CustomHook />
     </div>
   );
 }

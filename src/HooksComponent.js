@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-
-
+// #############################
+// #  TODO: Convert to hooks!  #
+//# ############################
 class HooksComponent extends React.Component {
   constructor() {
     super();
@@ -11,8 +12,7 @@ class HooksComponent extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(e) {
-    e.preventDefault();
+  handleClick() {
     const { count } = this.state;
 
     this.setState({

@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ClassComponent from './ClassComponent';
-import HooksComponent from './practiceComponents/HooksComponent';
-import CustomHook from './practiceComponents/FetchHook';
+import HooksComponent from './HooksComponent';
+import CustomHook from './FetchClass';
 import * as serviceWorker from './serviceWorker';
-
 
 function SuperSecretWrapper() {
   const [componentType, setComponentType] = useState('Classes');

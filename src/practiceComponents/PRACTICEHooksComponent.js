@@ -1,9 +1,6 @@
 import React from 'react';
 
-// #############################
-// #  TODO: Convert to hooks!  #
-//# ############################
-class HooksComponent extends React.Component {
+class ClassComponent extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -35,4 +32,4 @@ class HooksComponent extends React.Component {
   }
 }
 
-export default HooksComponent;
+export default ClassComponent;

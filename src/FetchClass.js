@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import URLWithAPIKey from '../APIKey'
+import URLWithAPIKey from './APIKey'
 
 class RendersJustOneImage extends React.Component {
   static fetchImages = (url) => {
